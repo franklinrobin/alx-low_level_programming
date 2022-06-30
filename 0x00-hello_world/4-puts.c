@@ -4,7 +4,7 @@
  *  * main - Entry point
  *   * prints string output
  *    * Return: Always 0 (Success)
- *     */
+ */
 
 int main(void)
 {
