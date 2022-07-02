@@ -12,7 +12,7 @@ int main(void)
 
 	while (c <= '9')
 	{
-		puthchar(c);
+		putchar(c);
 		c++;
 	}
 
