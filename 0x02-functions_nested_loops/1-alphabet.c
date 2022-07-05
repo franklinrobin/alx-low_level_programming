@@ -1,16 +1,39 @@
-#include <main.h>
-/**
- * main - main Entry
- * Description: Program that prints the alphabet in lower case
- * Return: Always 0 
- */
-int main(void)
-{
-	char c;
+#include "main.h"
 
-	for (c = 'a'; c <= 'z'; ++c)
-	{
-		_putchar(c);
-	}
-	_putchar('\n');
+
+
+/**
+
+ * print_alphabet - print alphabet lowercase
+
+ *
+
+ * Return: Always 0.
+
+ */
+
+
+
+void print_alphabet(void)
+
+{
+
+char alphabet;
+
+
+
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+
+{
+
+_putchar(alphabet);
+
+}
+
+
+
+_putchar('\n');
+
+
+
 }
