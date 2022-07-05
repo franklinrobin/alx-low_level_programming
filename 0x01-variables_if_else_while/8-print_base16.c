@@ -1,7 +1,8 @@
 #include <stdio.h>
-/*
- *main - main block entry point
- *Description - Prints base 16 numbers
+/**
+ *main - Entry point
+ *Description: Prints out all numbers of base 16 in lower case
+ *followed by a new line
  *Return: 0
  */
 int main(void)
