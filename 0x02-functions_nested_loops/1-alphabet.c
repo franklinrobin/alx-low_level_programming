@@ -1,14 +1,16 @@
-#include <stdio.h>
+#include <main.h>
 /**
  * main - main Entry
  * Description: Program that prints the alphabet in lower case
- * Return: 0
+ * Return: Always 0 
  */
-int main(void)
+void print_alphabet(void)
 {
 	char c;
 
 	for (c = 'a'; c <= 'z'; ++c)
-		printf("%c ", c);
-	return (0);
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
