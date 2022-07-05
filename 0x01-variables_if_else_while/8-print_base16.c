@@ -1,8 +1,8 @@
 #include <stdio.h>
 /*
- * function main - entry point
- * description - printing base 10 numbers
- * Return: 0
+ *main - main block entry point
+ *Description - Prints base 16 numbers
+ *Return: 0
  */
 int main(void)
 {
