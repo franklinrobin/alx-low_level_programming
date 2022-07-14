@@ -1,28 +1,34 @@
 #include "main.h"
+
 /**
  * print_number - prints an integer
- * @n: integere parameter
- * Return: void
+ *
+ *@n: integer
+ *
+ * Return: nothing
  */
 
 void print_number(int n)
 {
-	if (n < 0)
+	int y = 1000000000;
+	int x, z;
+
+	for (x = 0; x < 10; x++)
 	{
-		_putchar('-');
-		if (n < -9)
+		if ((n / y) == 0 && z == 0)
 		{
-			print_number(n / -10);
+			y = (y / 10);
+			continue;
 		}
-		_putchar('0' - n % 10);
-	}
-	else
-	{
-		if (n > 9)
+		else if (z == 0)
 		{
-			print_number(n / 10);
+			_putchar((n / y) + '0');
+			z++;
 		}
-		_putchar(n % 10 + '0');
+		else
+		{
+			_putchar ((n / y) % 10 + '0');
+		}
+		y = (y / 10);
 	}
 }
-
