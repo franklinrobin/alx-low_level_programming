@@ -1,18 +1,35 @@
+
 #include "main.h"
 
 /**
- * print_number - prints an interger.
- * @n: interger.
- * Return: nothing.
+ * print_number - function prints an integer
+ *
+ *@n: integer
+ *
+ * Return: nothing
  */
+
 void print_number(int n)
 {
-	if (n < 0)
+	int y = 1000000000;
+	int x, z;
+
+	for (x = 0; x < 10; x++)
 	{
-		_putchar('-');
-		n = -n;
+		if ((n / y) == 0 && z == 0)
+		{
+			y = (y / 10);
+			continue;
+		}
+		else if (z == 0)
+		{
+			_putchar((n / y) + '0');
+			z++;
+		}
+		else
+		{
+			_putchar ((n / y) % 10 + '0');
+		}
+		y = (y / 10);
 	}
-	if (n / 10)
-		print_number(n / 10);
-	_putchar('0' + n % 10);
 }
